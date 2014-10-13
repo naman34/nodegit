@@ -5,6 +5,7 @@ branches:
   only:
     - master
     - clone-methods
+    - enable-multios
 os:
   - linux
   - osx
