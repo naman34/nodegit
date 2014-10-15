@@ -32,16 +32,16 @@ Local<Array> tmpArray = NanNew<Array>({{= parsedName =}});
 {%endif%}
 to = tmpArray;
 {%else%}
-  {%if copy %}
-  if ({{= parsedName =}} != NULL) {
-    {{= parsedName =}} = ({{ cType|replace '**' '*' }} {%if not cType|isPointer %}*{%endif%}){{ copy }}({{= parsedName =}});
-  }
-  {%endif%}
+{%if copy %}
+if ({{= parsedName =}} != NULL) {
+  {{= parsedName =}} = ({{ cType|replace '**' '*' }} {%if not cType|isPointer %}*{%endif%}){{ copy }}({{= parsedName =}});
+}
+{%endif%}
 
-    if ({{= parsedName =}} != NULL) {
-      to = {{ cppClassName }}::New((void *){{= parsedName =}});
-    } else {
-      to = NanNull();
-    }
+  if ({{= parsedName =}} != NULL) {
+    to = {{ cppClassName }}::New((void *){{= parsedName =}});
+  } else {
+    to = NanNull();
+  }
 
 {%endif%}
