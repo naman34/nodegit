@@ -9223,5 +9223,17 @@
   "const git_cred_ssh_key_from_agent *": {
     "cpp": "CredSshKeyFromAgent",
     "js": "credSshKeyFromAgent"
+  },
+  "git_blame_init_options": {
+    "cpp": "InitOptions",
+    "js": "initOptions"
+  },
+  "git_blame_init_options *": {
+    "cpp": "InitOptions",
+    "js": "initOptions"
+  },
+  "const git_blame_init_options *": {
+    "cpp": "InitOptions",
+    "js": "initOptions"
   }
 }

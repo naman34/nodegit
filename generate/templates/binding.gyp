@@ -33,12 +33,12 @@
               "GCC_ENABLE_CPP_EXCEPTIONS": "YES",
 
               "WARNING_CFLAGS": [
-                "-Wno-unused-variable",
-              ],
+                "-Wno-unused-variable"
+              ]
             }
           }
         ]
       ]
-    },
+    }
   ]
 }
